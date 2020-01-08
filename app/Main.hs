@@ -1,7 +1,7 @@
 module Main where
 
 import Lib
-import Data.LRUCache
+import Data.Cache
 
 main :: IO ()
 main = someFunc

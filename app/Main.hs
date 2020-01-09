@@ -1,7 +1,23 @@
+{-# LANGUAGE ScopedTypeVariables #-}
+
 module Main where
 
 import Lib
 import Data.LRUCache.IO
 
 main :: IO ()
-main = someFunc
+main = do
+  cache :: LRUCache Int Int <- empty 2
+  (1, 1) -|> cache
+  readLRU cache >>= print
+  (2, 2) -|> cache
+  readLRU cache >>= print
+  1 <|- cache >>= print
+  (3, 3) -|> cache
+  readLRU cache >>= print
+  2 <|- cache >>= print
+  (4, 4) -|> cache
+  readLRU cache >>= print
+  1 <|- cache >>= print
+  3 <|- cache >>= print
+  4 <|- cache >>= print

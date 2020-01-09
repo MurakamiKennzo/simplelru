@@ -1,3 +1,11 @@
+{-|
+Module      : Data.LRUCache.IO
+Copyright   : Copyright (jp) 2020-present, murakami
+License     : BSD3
+Maintainer  : murakami
+
+The LRU cache wrapped in IO.
+-}
 module Data.LRUCache.IO 
   (
     LRUCache

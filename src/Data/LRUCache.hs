@@ -1,3 +1,11 @@
+{-|
+Module      : Data.LRUCache
+Copyright   : Copyright (jp) 2020-present, murakami
+License     : BSD3
+Maintainer  : murakami
+
+Pure API to an LRU cache.
+-}
 module Data.LRUCache
   (
     LRUCache(..)

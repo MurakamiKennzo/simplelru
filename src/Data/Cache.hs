@@ -1,3 +1,11 @@
+{-|
+Module      : Data.Cache
+Copyright   : Copyright (jp) 2020-present, murakami
+License     : BSD3
+Maintainer  : murakami
+
+The class Cache.
+-}
 module Data.Cache
   (
     Cache(..)

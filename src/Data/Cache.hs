@@ -10,5 +10,5 @@ class Cache c where
   (|>) :: (k, v) -> c k v -> c k v
 
 instance Cache LRUCache where
-  k <| c = view
+  (<|) = view
   (|>) = push
